@@ -31,21 +31,8 @@ Traditional study planners act as passive, retrospective logs—tracking time sp
 ---
 
 ## 🏗️ System Architecture
-            [ User / Browser Client ]
-                    │
-                    ▼
-[ Streamlit Multi-Page Web App ] ─── (Auth / Session State)
-                    │
-┌───────────────────┴──────────────────────────┐
-│                                              │
-▼                                              ▼
-[ SQLite Database (database.db) ]    [ ML Inference Engine ]
 
-User Profiles                      - marks_predictor.pkl
-
-Historical Study Logs              - Preprocessing Pipeline
-
-Qualitative Focus Scores           - Random Forest Regressor 
+![System Architecture](assets/system_architecture.png)
 
 
 ---
